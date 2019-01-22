@@ -11,7 +11,9 @@ NotifyMe is a web scraper that emails you if an item on your wishlist has change
 ### Usage
 - Initialize the venv.
 - ```cd``` into ```notify-me/notifyme/notifyme/spiders```.
-- Run ```scrapy crawl <spider name>``` with an instance of the ```mongod``` daemon running in a separate terminal to test the connection to MongoDB.
+- To test the connection to MongoDB:
+    - Initialize an instance of the mongod daemon with ```mongod --dbpath data/db```.
+    - Run ```scrapy crawl <spider name>``` to start.
 - Alternatively, run ```scrapy crawl <spider name> -o data.json -t json``` to save the collected data in ```data.json```.
 
 ### Todo
